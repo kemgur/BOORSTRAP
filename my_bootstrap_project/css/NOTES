@@ -1,0 +1,120 @@
+Containers:
+Container      : fixed width
+container-fluid: full width 
+COLORS:
+Backgorund colors:
+.bg-primary
+.bg-secondary
+.bg-success
+Text Colors:
+.text-success
+.text-warnig
+.text-dark
+justify-content-end  ---> moves elements to the end of the page
+justify-content-center --> moves the elemnts int he center
+Some styles work with certain elements and display types
+justify-content works when the diplay is flex
+navbar-light  -> makes the text dark on navbar
+navbar-dark   -> makes the text light on navbar
+GRID SYSTEM:
+Grid system in bootstrap is used to create rows and columns
+.row-> creats rows
+.col-> creats columns
+Note: We first use row then use col to create rows and columns
+<div class="container">
+  <div class="row">   --->>>>    MY ROW
+    <div class="col-sm"> --->>> COLUMN1
+      One of three columns
+    </div>
+    <div class="col-sm"> --->>> COlUMN 2
+      One of three columns
+    </div>
+    <div class="col-sm"> --->>> COLUMN 3
+      One of three columns
+    </div>
+  </div>
+</div>
+AUTO LAYOUT:
+ .col-sm-6  
+-> col= column
+-> sm = small screen
+-> 6 = number of units. Max number of unit is 12.
+.col-md-3  
+-> col : column
+-> md : middle screen
+-> 3 : 3 units/ 12 units
+.col-lg-2
+On a large screen occupy 2 units 
+col-lg-6 col-md-6 col-sm-12
+If screen is large : 6 units
+If screen is middle: 6 units
+If screen is small : 12 units
+----------Review Day1 Bootstrap----------
+Bootstrap is for faster development
+Bootstrap is ready-to-use styled css classes
+Certain classses has certain styles
+---Button----
+.bg-success 
+.bg-white    -> background colors
+.bg-warnig
+---Text colors--
+.text-success
+.text-white  -> text colors
+.text-warnig
+---container--
+container        : fixed with with some space around it
+container-fluid  : full width. no space
+--navbar---
+navbar-dark   -> makes text light
+navbar-light  -> makes text dark. used with light navbar background color
+--grids---
+col-lg-6  : on large screen 6/12
+col-md-4  : on mediumscreen 4/12
+col-sm-12 : on small screen 12/12
+Always use col inside a row.
+<div class="row">
+  <div class="col">
+    COLUMN 1
+  </div>
+  <div class="col">
+    COLUMN 2
+  </div>
+</div>
+ line-height: 1.5; -> Heaight of each line
+--------
+Where property is one of:
+m - for classes that set margin
+p - for classes that set padding
+Where sides is one of:
+t - for classes that set margin-top or padding-top
+b - for classes that set margin-bottom or padding-bottom
+l - for classes that set margin-left or padding-left
+r - for classes that set margin-right or padding-right
+x - for classes that set both *-left and *-right
+y - for classes that set both *-top and *-bottom
+blank - for classes that set a margin or padding on all 4 sides of the element
+Where size is one of:
+0 - for classes that eliminate the margin or padding by setting it to 0
+1 - (by default) for classes that set the margin or padding to $spacer * .25
+2 - (by default) for classes that set the margin or padding to $spacer * .5
+3 - (by default) for classes that set the margin or padding to $spacer
+4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+5 - (by default) for classes that set the margin or padding to $spacer * 3
+auto - for classes that set the margin to auto
+---------------------
+ml-3 : margin left 3 units
+mr-6 : margin right 6 units
+mt-4 : margin top 4 units
+mb-3 : margin bottom 3 units
+---------------------
+pl-3  :padding left
+pr-6  :padding right
+pt-4  : patting top
+pb-3  :patting buttom
+-----------
+@media is used for conditions
+Rotate the image by 25 deg if the screen size is fgreater than or equal to 768
+Do not rotate if the screen size is less than 767
+Add below two script to make your code synamic
+ <script src="js/bootstrap.js"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>

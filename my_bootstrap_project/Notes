@@ -1,0 +1,297 @@
+Notes
+class="container-fluid" ==>Metni butun sayfaya yayar.
+<div class="container"> ==>Kemarlardan biraz bosluk birakir
+
+GRID SYSTEM
+Butun satir en fazla 12 row a bolunebilir.
+<div class="col-md-1">Merhaba</div> Bundan 12 tane yazabiliriz
+<div class="col-md-4">Merhaba Dunya</div> bundan 3 tane yazabiliriz.
+Sayet 4 tane yazarsak alt satira inecektir.
+
+<div class="row">
+col-lg-"from1to12"==>large buyuk ekranlar icin
+col-md-"from1to12"==>medium dizustu bilgisayarlar icin
+col-sm-"from1to12"==>small tabletler icin
+col-xl-"from1to12"==>xlarge buyuk ekran televizyonlar icin
+
+ml==> margin left
+ml-auto==> sol tarafta otomatik olarak bosluk birak
+
+<p class="text-muted"> ==>Yaziyi soluklastirir.
+ <p class="text-lead"> ==> Yaziyi netlestirir,
+  Alttaki metnin ozetini yazip asil yazinin ustunde
+   kullanilabilir.
+
+   <code></code> etiketi yazi icerisinde coke lari gostermemizi saglar
+   <code>&lt;meta charset="utf-8"&gt;</code> bu sekilde yazilir.
+   Codun basindaki ve sonundaki parantezler kaldirilir ve 
+   basina "&lt;" sonuna "&gt;" eklenir.
+
+    <kbd></kbd> ==> Klavyedeki bir tusu gostermemizi saglar
+     <kbd>Ctrl</kbd>+<kbd>F</kbd> ==> bu sekilde yazilir.
+     Ctrl+F
+
+     <img src="aksoyhlc.net logo.jpg" alt="Aksoyhlc logo">
+     Buradaki "alt" in anlami, 
+     resim gozukmediginde resmin ne oldugunu ifade eder.
+
+     <img class="img-fluid" 
+     "img-fluid" ==> resmin mobil uyumlu olmasini saglar.
+
+     <img class="rounded img-thumbnail"==>"rounded" resmin koselerini yuvarlak yapar
+    <img class="rounded img-thumbnail"==>"img-thumbnail" resmin kemarlarina cerceve yapar
+
+    <img style="max-height: 200px;" class="mx-auto d-block" 
+    class="mx-auto d-block" 
+    m ==>margin 
+    x ==>x duzleminde
+    auto ==> otomatik olarak saginda solunda bosluk birak
+    d-block ==> resmi sayfada ortalar.
+
+  <h1>Metin Renkleri</h1>
+ <p class="text-secondary"></p>
+ "text-secondary" ==> Metni gri renk yapar.
+ "text-danger" ==>Metni kirmizi renk yapar.
+ "text-dark" ==>Metni siyah renk yapar.
+ "text-info" ==> Metni turkuaz renk yapar.
+ "text-white" ==>Metni beyaz renk yapar.
+ "text-light" ==> Metni kirli beyaz yapar.
+ "text-success" ==> Metni yesil yapar.
+ "text-primary"==> Metni mavi yapar.
+ "text-warning"==> Metni turuncu yapar.
+
+ <style>p{
+        padding: 20px; ==> Yazinin backgroundunu genisletir.
+        }
+  </style>
+
+    <table class="table"> ==> table i tum sayfaya yayar.
+    <table class="table table-bordered"> tabloya ve datalara cerceve cizer
+    <table class="table table-borderless"> sadece tabloya cerceve cizer
+    <table class="table table-hover">tablonun uzerine geldigimizde rengini degistirir
+    <div class="table-responsive"> ==> Uzun tablolarin altina kaydirma cubugu ekler.
+
+<strong>...</strong> ==> arasindaki yazilari kalin harfle yazar.
+<b>...</b> ==> arasindaki yazilari kalin harfle yazar.
+
+ <button type="button" class="btn btn-warning">Buraya tikla</button>
+ Buton olusturur. Buttonun ici belirtilen renklerle dolu olur
+
+  <button type="button" class="btn btn-outline-primary">Buraya tikla</button>
+  Buton olusturur.
+  btn-outline-primary ==> Butonun ici beyaz cercevesi belirtilen renkten olur.
+  Butonun ustune gelince rengi degisir.
+
+   <button type="button"  disabled class="btn btn-primary">Buraya tikla</button>
+   disabled ==> clasin disina yazilir ve buttonu devredisi birakir. Butona tiklanilmaz
+
+    <button type="button" class="btn btn-primary btn-lg">Buraya tikla</button>
+    btn-lg ==> Buttonu large ebatina getirir.
+    btn-sm ==> Buttonu small ebatina getirir.
+
+    <div class="btn-group"> ==> Buttonlari yanyan gosterir
+    <div class="btn-group-vertikal"> ==> Buttonlari yukaridan asagi dogru gosterir
+    <div class="btn-group-sm"> ==> Buttonlarin en kucuk halini gosterir
+
+
+
+
+
+ <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div> Adim adim aciklayalim:
+alert-warning ==> Alertin rengini belirtir
+alert-dismissible ==> Alertin kapatilabilir bir uyari kutusu oldugunu belirtiyor
+fade ==> Alerin animasyon sekli 
+show ==> Alerin gosterinmesi gerekltigini ifade ediyor.
+role="alert" ==> Bunun bir uyari kutusu oldugunu ifade ediyor
+
+ <h1>Merhaba Dunya <span class="badge badge-pill badge-danger">Yeni</span></h1>
+ badge ==> rozet anlamina gelir. Duyurularin yaninda "Yeni" yazarak dikkat cekmesini saglar.
+ badge-pill ==> "Yeni" yazisini dikdortgenden daireye cevirir
+ <span></span> <span> etiketi, <div> öğesine çok benzer, ancak <div> blok düzeyinde bir öğedir ve <span> bir satır içi öğedir.
+
+ <nav aria-label="breadcrumb"> ==> Sayfa icersinde nerede oldugumuzu gosterir.
+
+ <ul></ul> ==> unordered (bulleted) list.(sirasiz(madde isaretli) liste)
+ <li></li> ==> list ile birlikte kullanilir
+
+ <ul class="list-grup" style=" width: 200px">
+          <li class="list-group-item active">Merhaba Dunya</li>
+          <li class="list-group-item disabled">Merhaba Dunya</li>
+          <li class="list-group-item list-group-item-action">Merhaba Dunya</li>
+          <li class="list-group-item list-group-item-action" type="button">Merhaba Dunya</li>
+          <li class="list-group-item list-group-item-danger">Merhaba Dunya</li>
+        </ul>
+  class="list-grup" ==> ul ye bu sekilde class eklenir
+  class="list-group-item ==> li ye de bu sekilde eklenir
+  active ==> yazdigimizda button aktif olur.
+  disabled ==> yazdigimizda button pasif olur.
+  item list-group-item-action==> yazdigimizda buttonun uzerine gelince aksiyon icerir.
+  type="button ==> yazdigimizda buttona tiklayinca cercevesi renklenir
+  list-group-item-danger yazdigimizda hem renkli olur hemde uzerini tikladigimizda actiyon verir.
+
+    <ul class="nav bg-danger justify-content-center"></ul>
+    justify-content-center ==> nav buttonlarini ortalar
+
+    data toggle="tab" ==> Bunun bir tablo oldugunu belirtiyoruz
+    href="#contact" ==> ile tabloda hangi yazinin acilacagini belirtiyoruz
+    class="tab-content" ==> Tablonun aciklama kismini ifade eder
+
+    <nav> larda, <div> deki id="home" ile <li><a> deki href="home" ayni olmak zorundadir.
+    Ayrica <li><a> nin id="ozellik-tab" si ile de <div> in aria-laabelledby="ozellik=tab" i ayni olmak zorundadir.
+
+    border border-2 border-dark ==> <div> e siyah serceve ekler
+
+    //MODAL
+    data-target="#exampleModal01" ==> Birden fazla pencere acmak istedigimizde kullaniriz
+    button daki data-target="#exampleModal01" ile <div> deki id="exampleModal01" ayni olmalidir.
+
+    <span></span> ==> X isareti koymamizi saglar.
+
+    //Collapsible: Katlanabilir, saklanabilir soyfalar. Sik sorular sorularda kullanilabilir
+
+    //FORM
+    <input type="text" class="from-control" placeholder="Username" aria-label="Username" aria-description="basic-addon1">
+    class="from-control" ==> Her iput in icerisine bu class i yerlestirmeliyiz ki duzgun calisabilsin.
+
+    <input class="checkbox" name="xxxx"> ==> checkbox radio buttonu olusturur.
+
+    <div class="input-group-prepend">
+    --------------==> Bu alana <input> ile birlikte ne yazarsaniz bir button olusturur.
+    </div>
+
+    placeholder="E-mail adresini girin" ==> Formlarda kutunun icersindeki soluk yaziyi verir.
+
+    <div class="form-row" ==> Buttonlarin yanyana dizilmesini saglar.
+    
+    <input type="text" class="form-control is-valid"....
+    class="is-valid" ==> girilen bilginin dogru oldugunu gosteren yesil rengi veren classtir.
+
+    <input type="text" class="form-control is-invalid"....
+     class="is-invalid" ==> girilen bilginin dogru olmadigini gosteren kirimizi rengi veren classtir.
+
+     //Embed ==>video ekleme
+
+     //Progressbar==> yukleme cubugu
+
+     //Popover ==> Olusturulan butona tiklandiginda aciklama bolumunun acilmasidir.
+      $(function( ) {
+        $('[data-toggle="popover"]').popover()
+    })
+
+    //tooltips:Olusturulan butonun uzerine gidildiginde aciklama(kisa bir aciklama olamli) bolumunun acilmasidir. Geri geldigimizde aciklama kaybolur. Uzerinde tikladigimizda ise aciklama sabit bir sekilde uzerinde durur.
+    data-placement="top" ==> Aciklamanin nerede cikacagini belirler.
+    title="Aciklama alani" ==> Aciklama alaninda yazacak olan metin buraya yazilir.
+
+    //Border: Her tarafina cerceve eklemek icin border classsi kullanilir
+
+    //Position: Olusturulan butonun sayfa asagi indikce kaybolmamasini saglar.
+     <div class="fixed-top">
+         <button type="button" class="btn btn-primary btn-lg">Burayi tikla</button>
+         </div><br></br>
+          <div class="sticky-top">
+         <button type="button" class="btn btn-primary btn-lg">Burayi tikla</button>
+         </div><br></br>
+      class="fixed-top" ==> Buttonun ustte sabit kalmasini saglar
+      class="sticky-top" ==> Butonun cevresinde bir bosluk olusturur ve sayfayi asagi dogru indirdikce buton yukari cikar ve gorunur sekilde sabit kalir.
+      class="fixed-bottom" ==> Buttonun sayfanin altinda sabit kalmasini saglar
+
+      //SHADOW
+          <button type="button" class="btn btn-primary shadow-sm">Beni tikla</button>
+          <hr><br>
+           <button type="button" class="btn btn-primary shadow-lg">Beni tikla</button>
+           shadow-sm ==> golge olustumamizi saglar
+
+      //FLEX
+      <div class="d-flex flex-row bd-hightlight mb-3">
+      <div class="d-flex flex-row-reverse bd-hightlight mb-3">
+      class="d-flex" ==> Bir tane flex ozelligi kullanmak isitiyoruz, demektir
+       class="flex-row" class="d-flex justify-content-start"==> Flexleri tek satirda yanyana sol tarafta siralamak istedigimizi ifadee diyor
+       class="flex-row-reverse" class="d-flex justify-content-end"==> Flexleri tek satirda yanyana sag tarafta siralamak istedigimizi ifadee diyor
+       class="flex-row-colomn" ==> flex'lerin dik olmasini saglar
+       class="flex-row-colomn-reverse" ==> flex'lerin dik olarak tersine olmasini saglar
+       class="flex-row-reverse" class="d-flex justify-content-center"==> Flexleri tek satirda yanyana orta kisimda siralamak istedigimizi ifadee diyor
+       class="flex-row-reverse" class="d-flex justify-content-between"==> Flexleri tek satirda yanyana ortalayarak siralamak istedigimizi ifadee diyor
+
+       //FLOAT: Saga ve sola yaslama islemleri icin kullanir.
+       <button type="button" class="btn btn-warning float-right">BUTTON</button>
+       class="float-right" ==> Butonu sag tarafa yaslamamizi saglar.
+       class="float-left" ==> Butonu sol tarafa yaslamamizi saglar.
+       class="float-none" ==> Butonu sag tarafa diger butonun yanina yaslamamizi saglar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

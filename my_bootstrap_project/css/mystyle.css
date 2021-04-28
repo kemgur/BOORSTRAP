@@ -1,0 +1,80 @@
+.bg-bluee{
+    background-color: #073b4c;
+}
+.navbar-brand{
+    font-family:'Ubuntu';
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* making broders circular */
+.nav-radius{
+    border-radius: 1rem;
+}
+/* spaces at the top  
+2% -> 2 % padding form top and buttom
+5% -> 5 % from left and right*/
+.top-part-space{
+    padding: 2% 5%;
+}
+.top-buttom-45px-space{
+    padding: 45px 0;
+}
+.slogan{
+    font-family: 'Ubuntu';
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 10%;
+}
+/* Rotate the image only on large screen 
+@media is used for conditions
+Rotate the image by 25 deg if the screen size is fgreater than or equal to 768
+Do not rotate if the screen size is less than 767
+min-width
+max-width
+*/
+/* if screen is 768 or more */
+@media (min-width: 768px) {
+    .image{
+        transform: rotate(25deg);
+        width: 100%;
+        margin-left: 10%;
+    }
+    
+}
+/* if screen is 767 or less */
+@media (max-width: 767px) {
+    .image{
+        transform: rotate(0deg);
+        width: 100%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+}
+.download-links{
+    display:flex;
+    justify-content: center;
+}
+.fas{
+   color: #ffd166; 
+   margin-left: 10%;
+}
+/* apply style for id=comment of p tag
+# = id */
+/* 2 percent top-buttom and 3 percent right left padding
+For entire comments section */
+#comments{
+    padding: 2% 10%;
+}
+/* padding 15% from all sides for p tag that is inside comments section */
+#comments p{
+    font-size: 1.5rem;
+    padding: 15%;
+}
+/* image width is reduced to 10%
+added space on the left
+ */
+#comments img{
+    width: 10%;
+    margin-left: 30%;
+    
+}
