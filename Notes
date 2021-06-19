@@ -1,2 +1,16 @@
-1) css ve ja kutuphanesidir.
-2) responsive(duyarli) tasarim yapmayi kolaylastiriyor
+1) css ve js kutuphanesidir.
+2) responsive(duyarli) tasarim yapmayi kolaylastiriyor.(CepTelefonu ve tabletle uyumlu)
+3) Farkli browser'larda da uyumlu calismayi saglar.
+
+4) CDN (Content Delivery Network): CDN, bir web sitesinin
+ içeriğini en düşük ağ ve işlem gecikmesi ile 
+ yani en hızlı bir şekilde kullanıcılara ulaştırmak üzere
+  coğrafi olarak farklı bölgelerde konumlandırılmış sunucu
+   kümesine verilen isimdir.
+
+5) Kendi style dosylarimiz kutuphane style'larinin altina yazilir.
+
+6) Bootstrap'ta her seyi bir kontainer icersine konur.
+
+7) <!-- * container-fluid ile tum alani kapsayan bir alan olusturulur. -->
+    <div class="container-fluid></div>
